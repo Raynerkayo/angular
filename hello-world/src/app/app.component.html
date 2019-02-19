@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<meta charset="UTF-8">
+<div style="text-align:center">
+  <h1>
+    pt-br: Olá mundo, en-us: {{ title }}!
+    <!--Apenas para teste-->
+    <p>💻</p>
+  </h1>
+
+
+  <input type="text" [(ngModel)]="nome">
+  <button type="button" (click)="addNome()">Adicionar</button>
+
+
+  <ul>
+    <li *ngFor="let nome of nomes">{{nome}}</li>
+  </ul>
+
+
+</div>
+
+
+<router-outlet></router-outlet>

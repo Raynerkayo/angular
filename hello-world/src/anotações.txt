@@ -1,0 +1,33 @@
+Sempre devo entrar na pasta do projeto para eu poder subir o servidor.
+O app.component.html é onde eu estruturo a página, coloco o design.
+  nesse html tenho marcações que ajudam a construir e passar mostrar dados.
+    tenho {{title}} que irá mostrar o (um objeto ou variável)título definido no app.component.ts
+    e lá em app component tenho o valor desse title.
+O app.component.css é onde eu faço a estilização do conteúdo que eu quero aprensentar.
+O app.component.spec.ts, é para trabalhar com classe específicas.
+
+Sempre que eu tiver uma página, eu terei um componente.ts para passar as informações.
+
+Deu um erro, ao parar e executar novamente o serve; foi preciso matar o processo ng no linux,
+  com o seguinte comando: kill -2 $(lsof -t -i:4200)
+
+Vou criar um input para receber diversos nome e armazenar em memória.
+  então, crio o html, e depois crio os objetos em component.ts;
+  uso a diretiva [(ngModel)]="nomeObjeto" para passar do html para o component.ts
+  porém, devo colocar no imports do app.module.ts tudo que eu for usar. No caso o FormsModule. E fazer o import lá em cima.
+  no input button, vou colocar um método de clique. E declarar no app.component.ts
+  para adicionar arrays, devo utilizar o push.
+
+  *app.component.ts é como se fosse minha classe controller no java*
+
+  A pasta app é o componente de inicialização da aplicação.
+  no caso de um sistema para escola:
+    parte do professor, aluno, direção, cada um seria um componente similar ao componente app(passta)
+    porém, preciso ter o componente inicializador, para iniciar e chamar os outros componentes.
+
+**ERRO INTERESSANTE**
+Estava dando o seguinte erro
+ *Experimental support for decorators is a feature that is subject to change in a future release.*
+ *Set the 'experimentalDecorators' option `to remove this warning.*
+Esse erro é ocasionado pelo VS Code. E para solucionar, fui a configurações, e depois:
+  "javascript.implicitProjectConfig.experimentalDecorators" e então setei como true.
