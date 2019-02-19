@@ -1,16 +1,22 @@
-
-
 <div class="lista">
-  <p>
-    Página de clientes
-
-  <input type="text" [(ngModel)]="nome">
 
   <!--Usando material angular-->
-      <button mat-fab (click)="addNome()">Enviar</button>
+
+
+    <button mat-raised-button color="primary" (click)="addNome()">Enviar</button>
+      <form class="e-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Seu nome" [(ngModel)]="cliente.nome">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Sua idade" [(ngModel)]="cliente.idade" >
+          </mat-form-field>
+      </form>
+
 
   <ul>
-    <li *ngFor="let nome of nomes">{{nome}}</li>
+    <li *ngFor="let nome of clientes">{{nome}}</li>
   </ul>
 
 </div>

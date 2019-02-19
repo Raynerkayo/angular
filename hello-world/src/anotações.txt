@@ -41,3 +41,4 @@ A página "app" é chamada na página index. Onde dentro do <body> fica o <app-r
   caso eu queira chamar app-root, em outra página, eu devo colocar no lugar para html.
 
 Para usar o material angular, eu preciso importar o material para o app.module
+
