@@ -1,13 +1,17 @@
-<div style="text-align: center">
 
+
+<div class="lista">
   <p>
     Página de clientes
 
   <input type="text" [(ngModel)]="nome">
-  <button type="button" (click)="addNome()">Adicionar</button>
+
+  <!--Usando material angular-->
+      <button mat-fab (click)="addNome()">Enviar</button>
 
   <ul>
     <li *ngFor="let nome of nomes">{{nome}}</li>
   </ul>
 
 </div>
+

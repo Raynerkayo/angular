@@ -39,3 +39,5 @@ O selector, serve para eu fazer com que uma página "incorpore" outra.
 
 A página "app" é chamada na página index. Onde dentro do <body> fica o <app-root>
   caso eu queira chamar app-root, em outra página, eu devo colocar no lugar para html.
+
+Para usar o material angular, eu preciso importar o material para o app.module
