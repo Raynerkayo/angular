@@ -22,7 +22,7 @@ Vou criar um input para receber diversos nome e armazenar em memória.
 
   A pasta app é o componente de inicialização da aplicação.
   no caso de um sistema para escola:
-    parte do professor, aluno, direção, cada um seria um componente similar ao componente app(passta)
+    parte do professor, aluno, direção, cada um seria um componente similar ao componente app
     porém, preciso ter o componente inicializador, para iniciar e chamar os outros componentes.
 
 **ERRO INTERESSANTE**
@@ -31,3 +31,11 @@ Estava dando o seguinte erro
  *Set the 'experimentalDecorators' option `to remove this warning.*
 Esse erro é ocasionado pelo VS Code. E para solucionar, fui a configurações, e depois:
   "javascript.implicitProjectConfig.experimentalDecorators" e então setei como true.
+
+Parar criar um componente para usar neste projeto, eu devo usar:
+"ng g component clientes" dentro da pasta deste projeto.
+
+O selector, serve para eu fazer com que uma página "incorpore" outra.
+
+A página "app" é chamada na página index. Onde dentro do <body> fica o <app-root>
+  caso eu queira chamar app-root, em outra página, eu devo colocar no lugar para html.

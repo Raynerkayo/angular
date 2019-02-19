@@ -1,0 +1,13 @@
+<div style="text-align: center">
+
+  <p>
+    Página de clientes
+
+  <input type="text" [(ngModel)]="nome">
+  <button type="button" (click)="addNome()">Adicionar</button>
+
+  <ul>
+    <li *ngFor="let nome of nomes">{{nome}}</li>
+  </ul>
+
+</div>
