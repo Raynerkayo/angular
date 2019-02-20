@@ -19,7 +19,7 @@ export class UserService {
     // depois verificar !== se causa o erro ou não
     if (user.id != null && user.id !== '') {
       return this.htpp.put(`${HELP_DESK_API}/api/caminho/usuario`, user);
-    } else{
+    } else {
       user.id = null;
       return this.htpp.post(`${HELP_DESK_API}/api/caminho/usuario`, user);
     }
